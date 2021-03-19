@@ -1,4 +1,4 @@
-# webtoonBot
+# WebtoonBot 🤖
 
 ## **Summary**
 해당 프로젝트는 웹툰을 너무 좋아하는 제가 필요해서 만든 WebtoonBot입니다. 
