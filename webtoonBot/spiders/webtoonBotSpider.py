@@ -19,7 +19,9 @@ class webtoonBotSpider(scrapy.Spider):
         self.weekIdx = datetime.today().weekday();
         curHour = datetime.now().hour;
         if curHour >= 23:
-            weekIdx += 1
+            self.weekIdx += 1
+            if self.weekIdx == 7:
+                self.weekIdx = 0
         yield scrapy.Request("https://comic.naver.com/webtoon/weekdayList.nhn?week={}".format(self.days[self.weekIdx]),self.parse)
  
     #아이템 parse
